@@ -8,7 +8,7 @@ const cors = require('cors');
 
 
 const corsOptions = {
-    origin: 'http://mbiworld.online', // Allow requests from this specific URL
+    origin: 'https://mbiworld.org', // Allow requests from this specific URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
   };
 app.use(cors(corsOptions));
