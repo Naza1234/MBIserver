@@ -370,7 +370,7 @@ function sendWenMail(x,y,z,w){
 		const message = {
 				from: 'rofako82@gmail.com', // sender address
 				to:y, // list of receivers
-				subject: "MBI ticket decline", // Subject line
+				subject: "you just won", // Subject line
 				html:html, 
 			}
             transporter.sendMail(message,()=>{
@@ -569,7 +569,7 @@ function Sendbadmail(x,y,z,w){
 		const message = {
 				from: 'rofako82@gmail.com', // sender address
 				to:y, // list of receivers
-				subject: "MBI ticket decline", // Subject line
+				subject: "better luck next time", // Subject line
 				html:html, 
 			}
             transporter.sendMail(message,()=>{
