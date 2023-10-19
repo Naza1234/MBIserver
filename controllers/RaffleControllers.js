@@ -127,7 +127,7 @@ exports.UpdateSingleRaffle=async (req,res)=>{
             return res.status(404).json({ message: 'Document not found' });
         }
     
-        res.status(200).json(data,updatedData);
+        res.status(200).json({data,updatedData});
     } catch (error) {
         res.status(500).json({
             message:error.message
