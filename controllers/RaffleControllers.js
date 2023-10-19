@@ -137,7 +137,6 @@ exports.UpdateSingleRaffle=async (req,res)=>{
 
 
 exports.DeleteSingleRaffle= async(req,res)=>{
-    exports.DeleteRaffle = async (req, res) => {
         try {
             const { id } = req.params;
     
@@ -170,6 +169,5 @@ exports.DeleteSingleRaffle= async(req,res)=>{
                 message: error.message,
             });
         }
-    };
     
 }
