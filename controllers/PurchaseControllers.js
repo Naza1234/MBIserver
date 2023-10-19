@@ -105,7 +105,6 @@ exports.DeleteSinglePurchaseTickets= async(req,res)=>{
         
 
         const{id}=req.params
-        console.log(id);
         const data=await DB.findByIdAndDelete(id)
         
         res.status(200).json(data)

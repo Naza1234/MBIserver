@@ -76,8 +76,6 @@ exports.GetAllTicketBoth = async (req, res) => {
         const  RaffleId =id 
 
         const data = await TDB.find({ RaffleId: RaffleId, Both: true });
-         console.log(id)
-         console.log(data)
         res.status(200).json(data);
     } catch (error) {
         res.status(500).json({
