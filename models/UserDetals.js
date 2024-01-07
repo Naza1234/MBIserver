@@ -10,6 +10,11 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    UserIsAdmin: {
+        type:Boolean,
+        required:true,
+        default:false
+    },
     UserEmail: {
         type: String,
         required: true
